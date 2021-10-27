@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url("back.jpg");
+            color: #ffffff;
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        #heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5vh;
+            margin-left: 35vw;
+            padding: 2vw;
+            border: 2px solid white;
+            border-radius: 10px;
+            }
+
+        input {
+            width: 30vw;
+            height: 3vw;
+            border-radius: 10px;
+            padding: 0.2vw;
+            font-size: 2vw;
+        }
+
+        button {
+            width: 20vw;
+            height: 3vw;
+background:black;
+color: white;
+font-weight: bolder;
+font-size: 2vw;
+        }
+        #heading h1{
+            font-size: 5vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="heading">
+        <h1>Register Here</h1>
+    </div>
+    <div id="container">
+        <form action="data.php" method="POST">
+            <input type="text" name="name" placeholder="Name"><br><br>
+            <input type="text" name="mobile" placeholder="Mobile"><br><br>
+            <input type="email" name="email" placeholder="Email"><br><br>
+            <input type="city" name="city" placeholder="City"><br><br>
+            <input type="text" name="username" placeholder="Username"><br><br>
+            <input type="password" name="password" placeholder="Password"><br><br>
+            <center> <button>Submit</button></center>
+        </form>
+    </div>
+</body>
+
+</html>
